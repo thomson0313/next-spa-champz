@@ -1,0 +1,538 @@
+.background {
+    background: url('../assets/img/teamfight/bg.png')!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    inset: 0px;
+    position: fixed;
+    z-index: -1;
+}
+
+.team-fight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left-team {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-soldier-x { 
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.selected-soldier-y { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.soldier-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.soldier-info {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 15px;
+}
+.soldier-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* min-width: 340px; */
+
+    > .name {
+        font-size: 24px;
+        color: white;
+    }
+    > .level {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.heart-amount {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.heart-bar-x {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.heart-bar-y {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heart-bar-color {
+    background: linear-gradient(90deg, #80B800 0%, #DDF61B 48%, #80B800 100%);
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.strength-amount {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.strength-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.strength-bar-color-x {
+    border-radius: 5px;
+    border: black solid 1px;
+    background: linear-gradient(90deg, #0097B8 0%, #1BF6E9 48%, #0097B8 100%);;
+    width: 100%;
+}
+
+.strength-bar-color-y {
+    border-radius: 5px;
+    border: black solid 1px;
+    /* background: linear-gradient(90deg, #0097B8 0%, #1BF6E9 48%, #0097B8 100%);; */
+    width: 100%;
+    /* opacity: 0.2; */
+    background-color: rgb(3, 54, 50);
+}
+
+.attack-defense {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.attack-amount {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.defense-amount {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.attack-bar-x {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    background-color: rgb(53, 10, 10);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.attack-bar-y {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    background-color: rgb(53, 10, 10);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.defense-bar-x {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    background-color: rgb(48, 7, 48);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.defense-bar-y {
+    border-radius: 5px;
+    border: black solid 1px;
+    width: 100%;
+    background-color: rgb(53, 10, 10);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.attack-bar-color {
+    background: linear-gradient(90deg, #B85800 0%, #F6841B 48%, #B85800 100%);
+    width: 60%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.defense-bar-color {
+    background: linear-gradient(90deg, #7D00B8 0%, #CA1BF6 48%, #7D00B8 100%);
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.soldier-lives {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    > img {
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: 1540px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+.soldier-avatar > img {
+    border-radius: 50%;
+    border: #04C900 4px solid;
+    outline: black 2px solid;
+    width: 100px;
+    height: 100px;
+}
+
+.playground-x {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 130px;
+}
+
+.soliders-x {
+    display: flex;
+    flex-direction: row;
+    margin-left: 130px;
+    gap: 100px;
+}
+
+.soliders-y {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.soldier {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    > .character {
+        display: flex;
+        justify-content: center;
+
+        > img {
+            width: 150px;
+            height: 150px;
+
+            @media (max-width: 1540px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    
+
+    > .tag {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        > .method {
+            background-color: black;
+            border-radius: 50%;
+            border: #7D00B8 2px solid;
+            outline: black 1px solid;
+            width: 40px;
+            height: 40px;
+
+            @media (max-width: 1540px) {
+                width: 25px;
+                height: 25px;
+            }
+
+            > img {
+                width: 40px;
+                height: 40px;
+
+                @media (max-width: 1540px) {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        > .data {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            > .top {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 25px;
+                font-size: 18px;
+                color: white;
+
+                @media (max-width: 1540px) {
+                    font-size: 16px;
+                }
+            }
+
+            > .bar {
+                background-color: rgb(3, 32, 3);
+                border: black 1px solid;
+                width: 100%;
+                height: 10px;
+
+                > .bar-color {
+                    background: linear-gradient(90deg, #80B800 0%, #DDF61B 48%, #80B800 100%);
+                    width: 80%;
+                    height: 8px;
+                }
+            }
+        } 
+    }
+}
+
+.battle-plan {
+    position: absolute;
+    top: 0;
+    left: calc(-190px + 50vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: flex;
+
+    > :last-child {
+        margin-top: 20px;
+
+        > img {
+            @media (max-width: 1540px) {
+                width: 13vw;
+            }
+            @media (max-width: 1450px) {
+                width: 200px;
+            }
+        }
+    }
+}
+
+.battle-plan-panel {
+    position: absolute;
+    padding: 60px 20px 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    > .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 330px;
+    }
+}
+
+.panel-title {
+    font-size: 18px;
+    color: #4F3D25;
+    font-weight: 800;
+    -webkit-text-stroke: #FEEFC8 0.5px
+}
+
+.panel-reset {
+    background: url('../assets/img/teamfight/panel_r.png');
+    /* inset: 0; */
+    width: max-content;
+    padding: 3px 11px;
+}
+
+.sub-panels {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+
+    > div > img {
+        position: absolute;
+
+        @media (max-width: 1540px) {
+            width: calc(-12.5px + 10vw);
+        }
+        @media (max-width: 1450px) {
+            width: 137.5px;
+        }
+    }
+}
+
+.sub-panels-y {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    margin-top: 21%;
+
+    > div > img {
+        position: absolute;
+
+        @media (max-width: 1540px) {
+            width: calc(-12.5px + 10vw);
+        }
+        @media (max-width: 1450px) {
+            width: 137.5px;
+        }
+    }
+}
+
+.panel-in {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    > :nth-child(1) {
+        border-radius: 50%;
+        border: #0094FF 2px solid;
+        width: 50px;
+        height: 50px;
+        outline: black 1px solid;
+        background-color: #3f3126;
+
+        @media (max-width: 1540px) {
+            width: calc(-5px + 3vw);
+            height: calc(-5px + 3vw);
+        }
+        @media (max-width: 1450px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    > :nth-child(2) {
+        @media (max-width: 1540px) {
+            width: calc(-2px + 1.5vw);
+            height: calc(-2px + 1.5vw);
+        }
+        @media (max-width: 1450px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    > :nth-child(3) {
+        border-radius: 50%;
+        border: #FF0000 2px solid;
+        width: 50px;
+        height: 50px;
+        outline: black 1px solid;
+        background-color: #3f3126;
+
+        @media (max-width: 1540px) {
+            width: calc(-5px + 3vw);
+            height: calc(-5px + 3vw);
+        }
+        @media (max-width: 1450px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 1540px) {
+    .soliders-x {
+        gap: 50px;
+    }
+
+    .soldier-avatar > img {
+        width: 75px;
+        height: 75px;
+    }
+    .soldier-data  {
+        > .name {
+            font-size: 21px;
+        }
+        > .level {
+            font-size: 21px;
+        }
+    }
+    .playground-x {
+        margin-top: 200px;
+    }
+    .soldier-info {
+        gap: 5px;
+    }
+    .heart-bar-x {
+        height: 22px;
+    }
+    .heart-bar-y {
+        height: 22px;
+    }
+    .strength-bar {
+        height: 22px;
+    }
+    .attack-defense {
+        height: 22px;
+    }
+    .battle-plan {
+        left: 40vw;
+
+        > img {
+            width: 20vw;
+        }
+    }
+    .battle-plan-panel {
+        padding: 35px 10px 20px 10px;
+        gap: 3px;
+        > .top {
+            min-width: calc(-20px + 20vw)
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .soldier-info {
+        width: 250px;
+    }
+    .battle-plan {
+        left: 575px;
+        > img {
+            width: 300px;
+        }
+    }
+    .battle-plan-panel {
+        gap: 5px;
+        > .top {
+            min-width: 280px;
+        }
+    }
+}

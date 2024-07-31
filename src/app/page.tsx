@@ -1,95 +1,335 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from "react";
+import Image from 'next/image';
+import './styles.teamfight.css'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+import Character_1 from '../assets/img/teamfight/character-1.png'
+import LiveImg from '../assets/img/teamfight/live-1.png'
+import HeartIcon from '../assets/img/teamfight/heart_g.png'
+import StrengthIcon from '../assets/img/teamfight/light_b.png'
+import AttackIcon from '../assets/img/teamfight/attack.png'
+import DefenseIcon from '../assets/img/teamfight/defense.png'
+import MethodIcon from '../assets/img/teamfight/method_3.png'
+import PanelImg from '../assets/img/teamfight/panel.png'
+import SubPanelImg from '../assets/img/teamfight/panel-1.png'
+import StartButton from '../assets/img/teamfight/start.png'
+
+
+function TeamfightComponent() {
+    return(
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <div className="background"></div>
+            <div className="team-fight">
+                <div className="left-team">
+                    <div className="selected-soldier-x">
+                        <div className="soldier-profile">
+                            <div className="soldier-avatar">
+                                <Image src={Character_1} alt="avatar" />
+                            </div>
+                            <div className="soldier-lives">
+                                <Image src={LiveImg} alt="live" />
+                                <Image src={LiveImg} alt="live" />
+                                <Image src={LiveImg} alt="live" />
+                            </div>
+                        </div>
+                        <div className="soldier-info">
+                            <div className="soldier-data">
+                                <div className="name">Willow Gigglesworth</div>
+                                <div className="level">Lv.47</div>
+                            </div>
+                            <div className="heart-amount">
+                                <Image src={HeartIcon} alt="heart" />
+                                <div className="heart-bar-x">
+                                    <div className="heart-bar-color">100/90</div>
+                                </div>
+                            </div>
+                            <div className="strength-amount">
+                                <Image src={StrengthIcon} alt="heart" />
+                                <div className="strength-bar">
+                                    <div className="strength-bar-color-x"></div>
+                                    <div className="strength-bar-color-x"></div>
+                                    <div className="strength-bar-color-y"></div>
+                                </div>
+                            </div>
+                            <div className="attack-defense">
+                                <div className="attack-amount">
+                                    <Image src={AttackIcon} alt="attack" />
+                                    <div className="attack-bar-x">
+                                        <div className="attack-bar-color">8</div>
+                                    </div>
+                                </div>
+                                <div className="defense-amount">
+                                    <Image src={DefenseIcon} alt="defense" />
+                                    <div className="defense-bar-x">
+                                        <div className="defense-bar-color">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="playground-x">
+                        <div className="soliders-x">
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="soliders-y">
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="right-team">
+                    <div className="selected-soldier-y">
+                        <div className="soldier-info">
+                            <div className="soldier-data">
+                                <div className="name">Willow Gigglesworth</div>
+                                <div className="level">Lv.47</div>
+                            </div>
+                            <div className="heart-amount">
+                                <div className="heart-bar-y">
+                                    <div className="heart-bar-color">100/90</div>
+                                </div>
+                                <Image src={HeartIcon} alt="heart" />
+                            </div>
+                            <div className="strength-amount">
+                                <div className="strength-bar">
+                                    <div className="strength-bar-color-y"></div>
+                                    <div className="strength-bar-color-x"></div>
+                                    <div className="strength-bar-color-x"></div>
+                                </div>
+                                <Image src={StrengthIcon} alt="heart" />
+                            </div>
+                            <div className="attack-defense">
+                                <div className="attack-amount">
+                                    <div className="attack-bar-y">
+                                        <div className="attack-bar-color">8</div>
+                                    </div>
+                                    <Image src={AttackIcon} alt="attack" />
+                                </div>
+                                <div className="defense-amount">
+                                    <div className="defense-bar-y">
+                                        <div className="defense-bar-color">5</div>
+                                    </div>
+                                    <Image src={DefenseIcon} alt="defense" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="soldier-profile">
+                            <div className="soldier-avatar">
+                                <Image src={Character_1} alt="avatar" />
+                            </div>
+                            <div className="soldier-lives">
+                                <Image src={LiveImg} alt="live" />
+                                <Image src={LiveImg} alt="live" />
+                                <Image src={LiveImg} alt="live" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="playground-x">
+                        <div className="soliders-x">
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="soliders-y">
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="soldier">
+                                <div className="character">
+                                    <Image src={Character_1} alt="character" />
+                                </div>
+                                <div className="tag">
+                                    <div className="method">
+                                        <Image src={MethodIcon} alt="method" />
+                                    </div>
+                                    <div className="data">
+                                        <div className="top">
+                                            <div>Mary Sporecraft</div>
+                                            <div>Lv25</div>
+                                        </div>
+                                        <div className="bar">
+                                            <div className="bar-color"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="battle-plan">
+                <Image src={PanelImg} alt="panel" />
+                <div className="battle-plan-panel">
+                    <div className="top">
+                        <div className="panel-title">Battle Plan</div>
+                        <div className="panel-reset">Reset</div>
+                    </div>
+                    <div className="sub-panels">
+                        <div>
+                            <Image src={SubPanelImg} alt="sub" />
+                            <div className="panel-in">
+                                <Image src={Character_1} alt="character" />
+                                <Image src={MethodIcon} alt="method" />
+                                <Image src={Character_1} alt="character" />
+                            </div>
+                        </div>
+                        <div>
+                            <Image src={SubPanelImg} alt="sub" />
+                            <div className="panel-in">
+                                <Image src={Character_1} alt="character" />
+                                <Image src={MethodIcon} alt="method" />
+                                <Image src={Character_1} alt="character" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sub-panels-y">
+                        <div>
+                            <Image src={SubPanelImg} alt="sub" />
+                            <div className="panel-in">
+                                <Image src={Character_1} alt="character" />
+                                <Image src={MethodIcon} alt="method" />
+                                <Image src={Character_1} alt="character" />
+                            </div>
+                        </div>
+                        <div>
+                            <Image src={SubPanelImg} alt="sub" />
+                            <div className="panel-in">
+                                <Image src={Character_1} alt="character" />
+                                <Image src={MethodIcon} alt="method" />
+                                <Image src={Character_1} alt="character" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <Image src={StartButton} alt="start" />
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    )
 }
+
+export default TeamfightComponent;
